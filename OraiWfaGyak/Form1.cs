@@ -41,13 +41,19 @@ namespace OraiWfaGyak
                     if (args1.Button == MouseButtons.Right)
                     {
                         MessageBox.Show("JobbKlikkeltél!");
-
-
                     }
                     if (args1.Button == MouseButtons.Left)
                     {
                         MessageBox.Show("Tartalom: " + dynamicTxtBox.Text);
                     }
+                };
+
+                Button deleteD = new Button();
+                deleteD.Text = "Delete";
+                deleteD.SetBounds(220, 50 + i * 25, 100, deleteD.Height);
+                deleteD.Click += (sndr2, args2) =>
+                {
+
                 };
             }
 
